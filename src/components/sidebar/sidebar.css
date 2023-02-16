@@ -8,6 +8,9 @@ aside {
 .aside-bar {
   width: 100%;
 }
+.aside-bar .bars {
+  display: none;
+}
 
 .aside-bar .logo {
   display: flex;
@@ -98,8 +101,8 @@ aside {
   .admin-panel small {
     display: none;
   }
-  .aside-bar .logo {
-    margin-right: 8px;
+  .aside-bar .logo img {
+    display: none;
   }
   .links-container a {
     display: none;
@@ -112,6 +115,19 @@ aside {
     margin-right: 8px;
   }
   .profile a {
+    display: none;
+  }
+  .aside-bar .bars {
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 425px) {
+  aside {
     display: none;
   }
 }/*# sourceMappingURL=sidebar.css.map */

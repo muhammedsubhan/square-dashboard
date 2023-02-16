@@ -7,6 +7,9 @@ aside {
 
 .aside-bar {
   width: 100%;
+  .bars {
+    display: none;
+  }
 }
 
 .aside-bar .logo {
@@ -110,7 +113,9 @@ aside {
   }
 
   .aside-bar .logo {
-    margin-right: 8px;
+    img {
+      display: none;
+    }
   }
 
   .links-container a {
@@ -125,6 +130,21 @@ aside {
     margin-right: 8px;
   }
   .profile a {
+    display: none;
+  }
+
+  .aside-bar .bars {
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  aside {
     display: none;
   }
 }

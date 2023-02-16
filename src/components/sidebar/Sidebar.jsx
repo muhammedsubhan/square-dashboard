@@ -12,6 +12,9 @@ const Sidebar = () => {
             <img src={Logo} alt="Logo" />
             <h1>SQUARE</h1>
           </div>
+          <div className="bars">
+            <i className="fa-solid fa-bars"></i>
+          </div>
           <div className="admin-panel">
             <small>admin panel</small>
           </div>
@@ -45,7 +48,7 @@ const Sidebar = () => {
 
               <li>
                 <div className="font-awe-icon">
-                  <i class="fa-solid fa-receipt"></i>
+                  <i className="fa-solid fa-receipt"></i>
                 </div>
                 <a href="#/">Accounting</a>
               </li>
@@ -62,7 +65,7 @@ const Sidebar = () => {
             <img src={profile} alt="profile" />
             <a href="#/">
               <h2>My Profile</h2>
-              <i class="fa-solid fa-angle-right"></i>
+              <i className="fa-solid fa-angle-right"></i>
             </a>
           </div>
         </div>
