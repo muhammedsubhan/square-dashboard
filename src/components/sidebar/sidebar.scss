@@ -1,0 +1,130 @@
+aside {
+  display: flex;
+  min-height: 100vh;
+  width: 188px;
+  box-shadow: 1px 0px 0px #ebebeb;
+}
+
+.aside-bar {
+  width: 100%;
+}
+
+.aside-bar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+
+  h1 {
+    font-family: myFont;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+}
+
+.admin-panel {
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: -4px;
+  margin-left: 12px;
+
+  small {
+    font-family: myFont;
+    font-weight: 500;
+    line-height: 15px;
+    color: #a8a9b3;
+  }
+}
+.links-container {
+  ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+
+    li {
+      display: flex;
+      padding: 1rem;
+      margin-top: 1rem;
+
+      .font-awe-icon {
+        margin-right: 1.5rem;
+        color: #404043;
+        font-size: 17px;
+        margin-left: 10px;
+      }
+
+      a {
+        font-family: myFont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #404043;
+        transition: all 0.3s ease;
+      }
+
+      a:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+
+  a {
+    display: flex;
+    align-items: center;
+    h2 {
+      font-family: myFont;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #404043;
+      margin-left: 0.6rem;
+    }
+
+    i {
+      margin-left: 2rem;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aside-bar .logo h1 {
+    display: none;
+  }
+
+  .admin-panel small {
+    display: none;
+  }
+
+  .aside-bar .logo {
+    margin-right: 8px;
+  }
+
+  .links-container a {
+    display: none;
+  }
+
+  aside {
+    width: 80px;
+  }
+  .profile {
+    margin-top: 80px;
+    margin-right: 8px;
+  }
+  .profile a {
+    display: none;
+  }
+}
