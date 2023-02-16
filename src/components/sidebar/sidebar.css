@@ -44,7 +44,6 @@ aside {
   display: flex;
   align-items: stretch;
   justify-content: center;
-  text-align: start;
   flex-direction: column;
 }
 .links-container ul li {
