@@ -39,6 +39,29 @@
   font-weight: 100;
 }
 
+.Sidebar-container {
+  position: fixed;
+  left: -100%;
+  background: white;
+  width: 14rem;
+  z-index: 999;
+  box-shadow: 1rem 3rem 4rem rgba(132, 139, 200, 0.18);
+  height: 100vh;
+  padding-right: 1.8rem;
+  animation: showMenu 400ms ease forwards;
+  /* display */
+  display: none;
+}
+
+@keyframes showMenu {
+  to {
+    left: 0;
+  }
+}
+.Sidebar-container.active {
+  display: block;
+}
+
 @media screen and (max-width: 550px) {
   .header .header-links i {
     display: none;
@@ -54,10 +77,120 @@
     font-size: 20px;
   }
 }
-@media screen and (max-width: 420px) {
+.xmark {
+  margin-right: -10px;
+  text-align: end;
+}
+.xmark i {
+  font-size: 20px;
+}
+
+.sidebar-links ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+.sidebar-links ul li {
+  display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.sidebar-links ul li .font-awe-icon {
+  margin-right: 1.5rem;
+  color: #404043;
+  font-size: 17px;
+  margin-left: 10px;
+}
+.sidebar-links ul li a {
+  font-family: myFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #404043;
+  transition: all 0.3s ease;
+}
+.sidebar-links ul li a:hover {
+  color: #000;
+}
+
+.my-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.my-profile a {
+  display: flex;
+  align-items: center;
+}
+.my-profile a h2 {
+  font-family: myFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #404043;
+  margin-left: 0.6rem;
+}
+.my-profile a i {
+  margin-left: 2rem;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 425px) {
   .header .bars {
     display: block;
     margin-left: 5px;
     font-size: 20px;
+  }
+  .sidebar-links {
+    margin-top: -18px;
+  }
+  .xmark {
+    margin-top: 12px;
+  }
+  .Sidebar-container {
+    top: 0px;
+  }
+}
+.myprofile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: black;
+  height: 158px;
+  width: 201px;
+  position: absolute;
+  bottom: 15px;
+  left: 170px;
+  background: #ffffff;
+  border: 1px solid #ececf0;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  display: none;
+  z-index: 999;
+}
+.myprofile a {
+  margin-left: 20px;
+  font-family: myFont;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  color: #000000;
+  margin-top: 20px;
+}
+.myprofile a i {
+  margin-right: 8px;
+}
+
+.myprofile.active {
+  display: flex;
+}
+
+@media screen and (max-width: 420px) {
+  .myprofile {
+    left: 120px;
+    top: 400px;
   }
 }/*# sourceMappingURL=header.css.map */

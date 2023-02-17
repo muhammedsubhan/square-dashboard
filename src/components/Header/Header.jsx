@@ -78,7 +78,7 @@ const Header = () => {
                 <>
                   <div
                     className={
-                      toggleHeader ? "profile-links active" : "profile-links"
+                      toggleHeader ? "myprofile active" : "myprofile"
                     }
                   >
                     <a href="#/">
