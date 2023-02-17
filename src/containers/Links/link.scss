@@ -94,3 +94,52 @@
     display: none;
   }
 }
+
+.profile-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: black;
+  height: 158px;
+  width: 201px;
+  position: absolute;
+  bottom: 15px;
+  left: 170px;
+  background: #ffffff;
+  border: 1px solid #ececf0;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  display: none;
+  z-index: 999;
+
+  a {
+    margin-left: 20px;
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 100%;
+    color: #000000;
+    margin-top: 20px;
+
+    i {
+      margin-right: 8px;
+    }
+  }
+}
+
+.profile-links.active {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile-links {
+    bottom: 240px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-links {
+    bottom: 325px;
+    left: 80px;
+  }
+}

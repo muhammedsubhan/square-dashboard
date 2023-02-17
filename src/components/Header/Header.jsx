@@ -3,7 +3,7 @@ import "./header.scss";
 import profile from "../../Assets/assets/profile.png";
 const Header = () => {
   const [togglebtn, setToggleBtn] = useState(false);
-
+  const [toggleHeader, setToggleHeader] = useState(false);
   return (
     <>
       <div className="header">
@@ -60,12 +60,44 @@ const Header = () => {
               </div>
 
               <div className="my-profile">
-                <img src={profile} alt="profile" />
-                <a href="#/">
+                <img
+                  src={profile}
+                  alt="profile"
+                  onClick={() => setToggleHeader((prev) => !prev)}
+                />
+                <a href="#/" onClick={() => setToggleHeader((prev) => !prev)}>
                   <h2>My Profile</h2>
-                  <i className="fa-solid fa-angle-right"></i>
+                  <i
+                    className="fa-solid fa-angle-right"
+                    onClick={() => setToggleHeader((prev) => !prev)}
+                  ></i>
                 </a>
               </div>
+
+              {toggleHeader && (
+                <>
+                  <div
+                    className={
+                      toggleHeader ? "profile-links active" : "profile-links"
+                    }
+                  >
+                    <a href="#/">
+                      <i className="fa-solid fa-user-large"></i>
+                      Edit Profile
+                    </a>
+
+                    <a href="#/">
+                      <i className="fa-solid fa-gear"></i>
+                      Settings
+                    </a>
+
+                    <a href="#/">
+                      <i className="fa-solid fa-right-from-bracket"></i>
+                      Log out
+                    </a>
+                  </div>
+                </>
+              )}
             </div>
           </>
         )}

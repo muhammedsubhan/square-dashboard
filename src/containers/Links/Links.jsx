@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./link.scss";
 import profile from "../../Assets/assets/profile.png";
+
 const Links = () => {
+  const [profileToggle, setProfileToggle] = useState(false);
   return (
     <>
       <div className="links-container">
@@ -47,12 +49,42 @@ const Links = () => {
       </div>
 
       <div className="profile">
-        <img src={profile} alt="profile" />
-        <a href="#/">
+        <img
+          src={profile}
+          alt="profile"
+          onClick={() => setProfileToggle((prev) => !prev)}
+        />
+        <a href="#/" onClick={() => setProfileToggle((prev) => !prev)}>
           <h2>My Profile</h2>
-          <i className="fa-solid fa-angle-right"></i>
+          <i
+            className="fa-solid fa-angle-right"
+            onClick={() => setProfileToggle((prev) => !prev)}
+          ></i>
         </a>
       </div>
+
+      {profileToggle && (
+        <>
+          <div
+            className={profileToggle ? "profile-links active" : "profile-links"}
+          >
+            <a href="#/">
+              <i className="fa-solid fa-user-large"></i>
+              Edit Profile
+            </a>
+
+            <a href="#/">
+              <i className="fa-solid fa-gear"></i>
+              Settings
+            </a>
+
+            <a href="#/">
+              <i className="fa-solid fa-right-from-bracket"></i>
+              Log out
+            </a>
+          </div>
+        </>
+      )}
     </>
   );
 };
