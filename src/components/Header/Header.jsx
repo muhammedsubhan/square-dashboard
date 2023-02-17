@@ -13,11 +13,7 @@ const Header = () => {
 
         {togglebtn && (
           <>
-            <div
-              className={
-                togglebtn ? "Sidebar-container active" : "Sidebar-container"
-              }
-            >
+            <div className={togglebtn ? "Sidebar-container active" : null}>
               <div className="xmark" onClick={() => setToggleBtn(false)}>
                 <i className="fa-solid fa-xmark"></i>
               </div>

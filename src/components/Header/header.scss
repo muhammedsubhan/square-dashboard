@@ -43,16 +43,14 @@
 }
 
 .Sidebar-container {
-  margin-top: 547px;
   position: fixed;
   left: -100%;
-  background: white;
+  background: green;
   width: 14rem;
   z-index: 999;
   box-shadow: 1rem 3rem 4rem rgba(132, 139, 200, 0.18);
   height: 100vh;
   padding-right: 1.8rem;
-
   animation: showMenu 400ms ease forwards;
   /* display */
   display: none;
@@ -158,7 +156,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 424px) {
   .header .bars {
     display: block;
     margin-left: 5px;
@@ -172,4 +170,11 @@
   .xmark {
     margin-top: 12px;
   }
+
+  .Sidebar-container {
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
 }
