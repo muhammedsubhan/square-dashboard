@@ -42,6 +42,32 @@
   }
 }
 
+.Sidebar-container {
+  margin-top: 547px;
+  position: fixed;
+  left: -100%;
+  background: white;
+  width: 14rem;
+  z-index: 999;
+  box-shadow: 1rem 3rem 4rem rgba(132, 139, 200, 0.18);
+  height: 100vh;
+  padding-right: 1.8rem;
+
+  animation: showMenu 400ms ease forwards;
+  /* display */
+  display: none;
+}
+
+@keyframes showMenu {
+  to {
+    left: 0;
+  }
+}
+
+.Sidebar-container.active {
+  display: block;
+}
+
 @media screen and (max-width: 550px) {
   .header .header-links i {
     display: none;
@@ -62,10 +88,88 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+.xmark {
+  margin-right: -10px;
+  text-align: end;
+
+  i {
+    font-size: 20px;
+  }
+}
+
+.sidebar-links {
+  ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+
+    li {
+      display: flex;
+      padding: 1rem;
+      margin-top: 1rem;
+
+      .font-awe-icon {
+        margin-right: 1.5rem;
+        color: #404043;
+        font-size: 17px;
+        margin-left: 10px;
+      }
+
+      a {
+        font-family: myFont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #404043;
+        transition: all 0.3s ease;
+      }
+
+      a:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+.my-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+
+  a {
+    display: flex;
+    align-items: center;
+    h2 {
+      font-family: myFont;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #404043;
+      margin-left: 0.6rem;
+    }
+
+    i {
+      margin-left: 2rem;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
   .header .bars {
     display: block;
     margin-left: 5px;
     font-size: 20px;
+  }
+
+  .sidebar-links {
+    margin-top: -18px;
+  }
+
+  .xmark {
+    margin-top: 12px;
   }
 }
