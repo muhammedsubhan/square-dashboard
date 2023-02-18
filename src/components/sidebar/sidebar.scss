@@ -1,8 +1,10 @@
 aside {
   display: flex;
   min-height: 100vh;
-  width: 188px;
+  width: 13%;
   box-shadow: 1px 0px 0px #ebebeb;
+  background: white;
+  z-index: 999;
 }
 
 .aside-bar {

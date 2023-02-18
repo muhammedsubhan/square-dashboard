@@ -77,9 +77,7 @@ const Header = () => {
               {toggleHeader && (
                 <>
                   <div
-                    className={
-                      toggleHeader ? "myprofile active" : "myprofile"
-                    }
+                    className={toggleHeader ? "myprofile active" : "myprofile"}
                   >
                     <a href="#/">
                       <i className="fa-solid fa-user-large"></i>

@@ -17,6 +17,6 @@ body {
 
 .App {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  background: #f7f8fa;
+  min-height: 100vh;
 }/*# sourceMappingURL=App.css.map */

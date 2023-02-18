@@ -54,37 +54,41 @@ const Links = () => {
           alt="profile"
           onClick={() => setProfileToggle((prev) => !prev)}
         />
-        <a href="#/" onClick={() => setProfileToggle((prev) => !prev)}>
+       <div className="L">
+       <a href="#/" onClick={() => setProfileToggle((prev) => !prev)}>
           <h2>My Profile</h2>
           <i
             className="fa-solid fa-angle-right"
             onClick={() => setProfileToggle((prev) => !prev)}
           ></i>
         </a>
+       </div>
+
+        {profileToggle && (
+          <>
+            <div
+              className={
+                profileToggle ? "profile-links active" : "profile-links"
+              }
+            >
+              <a href="#/">
+                <i className="fa-solid fa-user-large"></i>
+                Edit Profile
+              </a>
+
+              <a href="#/">
+                <i className="fa-solid fa-gear"></i>
+                Settings
+              </a>
+
+              <a href="#/">
+                <i className="fa-solid fa-right-from-bracket"></i>
+                Log out
+              </a>
+            </div>
+          </>
+        )}
       </div>
-
-      {profileToggle && (
-        <>
-          <div
-            className={profileToggle ? "profile-links active" : "profile-links"}
-          >
-            <a href="#/">
-              <i className="fa-solid fa-user-large"></i>
-              Edit Profile
-            </a>
-
-            <a href="#/">
-              <i className="fa-solid fa-gear"></i>
-              Settings
-            </a>
-
-            <a href="#/">
-              <i className="fa-solid fa-right-from-bracket"></i>
-              Log out
-            </a>
-          </div>
-        </>
-      )}
     </>
   );
 };

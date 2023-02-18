@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: white;
 }
 
 .header .bars {
@@ -212,9 +213,8 @@
   display: flex;
 }
 
-
 @media screen and (max-width: 420px) {
-  .myprofile{
+  .myprofile {
     left: 120px;
     top: 400px;
   }
