@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./home.scss";
 import Header from "../Header/Header";
+import HomeData from "../../containers/home-data/HomeData";
 const Home = () => {
   const [show, setShow] = useState(false);
   return (
@@ -37,6 +38,7 @@ const Home = () => {
             )}
           </div>
         </div>
+        <HomeData />
       </div>
     </>
   );

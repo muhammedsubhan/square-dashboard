@@ -1,0 +1,45 @@
+.home__data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home__data-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 18px;
+  height: 103px;
+  width: 218px;
+  margin-left: 35px;
+  gap: 12px;
+  margin-bottom: 20px;
+
+  .logo__tag {
+    margin-left: 13px;
+    background: #f7f8fa;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.home__data-container .title h1 {
+  font-family: myFont;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 30px;
+  color: #404043;
+}
+
+.home__data-container .title span {
+  font-family: myFont;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #807f87;
+}
