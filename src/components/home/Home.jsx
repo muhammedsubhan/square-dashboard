@@ -2,8 +2,24 @@ import React, { useState } from "react";
 import "./home.scss";
 import Header from "../Header/Header";
 import HomeData from "../../containers/home-data/HomeData";
+import { data } from "../../containers/home-data/data";
+import HomeContent from "../../containers/home-content/HomeContent";
 const Home = () => {
   const [show, setShow] = useState(false);
+
+  const dataContent = [
+    {
+      title: "Talents Subscriptions",
+    },
+
+    {
+      title: "Businesses requestes",
+    },
+
+    {
+      title: "Wallet",
+    },
+  ];
   return (
     <>
       <div className="home-container">
@@ -38,7 +54,24 @@ const Home = () => {
             )}
           </div>
         </div>
-        <HomeData />
+        <div className="home__data">
+          {data.map((ele, index) => {
+            return (
+              <HomeData key={index} i={ele.i} h1={ele.h1} span={ele.span} />
+            );
+          })}
+        </div>
+        <div className="home__content-data">
+          {dataContent.map((ele, index) => {
+            return (
+              <>
+                <div className="divv" key={index}>
+                  <HomeContent title={ele.title} />
+                </div>
+              </>
+            );
+          })}
+        </div>
       </div>
     </>
   );

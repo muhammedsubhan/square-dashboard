@@ -9,17 +9,16 @@
   margin-left: 35px;
   gap: 12px;
   margin-bottom: 20px;
-
-  .logo__tag {
-    margin-left: 13px;
-    background: #f7f8fa;
-    height: 48px;
-    width: 48px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
+.home__data-container .logo__tag {
+  margin-left: 13px;
+  background: #f7f8fa;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home__data-container .title h1 {
@@ -37,4 +36,4 @@
   line-height: 19px;
   text-transform: capitalize;
   color: #807f87;
-}
+}/*# sourceMappingURL=homeData.css.map */
