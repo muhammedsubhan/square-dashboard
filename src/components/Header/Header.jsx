@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./header.scss";
+import { Link } from "react-router-dom";
 import profile from "../../Assets/assets/profile.png";
 const Header = () => {
   const [togglebtn, setToggleBtn] = useState(false);
@@ -23,38 +24,38 @@ const Header = () => {
                     <div className="font-awe-icon">
                       <i className="fa-solid fa-house"></i>
                     </div>
-                    <a href="#/">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
                     <div className="font-awe-icon">
                       <i className="fa-solid fa-users"></i>
                     </div>
-                    <a href="#/">Database</a>
+                    <Link to="/database">Database</Link>
                   </li>
                   <li>
                     <div className="font-awe-icon">
                       <i className="fa-sharp fa-solid fa-bell-concierge"></i>
                     </div>
-                    <a href="#/">Reservations</a>
+                    <Link to="/reservation">Reservations</Link>
                   </li>
                   <li>
                     <div className="font-awe-icon">
                       <i className="fa-solid fa-calendar"></i>
                     </div>
-                    <a href="#/">Projects</a>
+                    <Link to="/project">Projects</Link>
                   </li>
 
                   <li>
                     <div className="font-awe-icon">
                       <i className="fa-solid fa-receipt"></i>
                     </div>
-                    <a href="#/">Accounting</a>
+                    <Link to="/accounting">Accounting</Link>
                   </li>
                   <li>
                     <div className="font-awe-icon">
                       <i className="fa-solid fa-chart-pie"></i>
                     </div>
-                    <a href="#/">Stats</a>
+                    <Link to="/stats">Stats</Link>
                   </li>
                 </ul>
               </div>

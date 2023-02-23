@@ -30,8 +30,8 @@
 .profile {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 150px;
+  align-items: flex-end;
+  height: 44%;
   position: relative;
 }
 .profile a {

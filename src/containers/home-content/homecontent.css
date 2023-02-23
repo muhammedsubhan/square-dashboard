@@ -4,6 +4,7 @@
   width: 380px;
   height: 434px;
   margin-left: 35px;
+  margin-bottom: 50px;
 }
 
 .home__content-title {
@@ -15,7 +16,7 @@
   font-family: myFont;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 100%;
   color: #000000;
   margin-left: 18px;
@@ -38,4 +39,12 @@
 
 .home__content-social {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .home__content-container {
+    margin-left: 2px;
+    margin-top: -5px;
+    margin-bottom: 25px;
+  }
 }/*# sourceMappingURL=homecontent.css.map */

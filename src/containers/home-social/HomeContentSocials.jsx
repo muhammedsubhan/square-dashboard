@@ -15,7 +15,6 @@ const HomeContentSocials = ({
   cross,
   True,
 }) => {
-  console.log(True);
   return (
     <>
       <div className="home__social-links">

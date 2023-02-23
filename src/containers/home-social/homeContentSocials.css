@@ -40,4 +40,54 @@
 
 .social__container {
   margin-top: 25px;
+}
+
+.social__container .followers {
+  margin-right: 10px;
+}
+.social__container .followers h1 {
+  font-family: myFont;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000000;
+}
+.social__container .followers small {
+  font-family: myFont;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #807f87;
+}
+
+.social__container .location {
+  margin-right: 10px;
+}
+.social__container .location h1 {
+  font-family: myFont;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+}
+.social__container .location small {
+  font-family: myFont;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  color: #807f87;
+}
+
+.social__container .profit {
+  margin-right: 10px;
+}
+.social__container .profit h2 {
+  font-family: myFont;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
 }/*# sourceMappingURL=homeContentSocials.css.map */
