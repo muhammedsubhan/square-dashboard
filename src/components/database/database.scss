@@ -1,5 +1,6 @@
 .database__container {
   width: 100%;
+  min-height: 100vh;
 }
 
 .database__heading {
@@ -145,18 +146,284 @@
 .database__content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+
+  .contentA {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .database__content .contentA {
-  border: 1px solid red;
-  height: 100vh;
-  width: 78%;
+  min-height: 100vh;
+  width: 72%;
 }
 
 .database__content .contentB {
-  border: 1px solid blue;
-  width: 20%;
+  width: 26%;
+
+  .filters {
+    hr {
+      width: 90%;
+      color: #9ea0b4;
+      opacity: 0.6;
+    }
+    .filter__title {
+      h1 {
+        font-family: myFont;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #404043;
+      }
+    }
+
+    .filter__input {
+      background: #ffffff;
+      border: 1px solid #ececf0;
+      border-radius: 4px;
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+      margin-top: 15px;
+      input {
+        height: 43px;
+        border: none;
+      }
+
+      input::placeholder {
+        color: #9ea0b4;
+        font-size: 15px;
+      }
+
+      i {
+        font-size: 18px;
+        color: #9ea0b4;
+        opacity: 0.7;
+      }
+    }
+
+    .filter__social {
+      display: flex;
+      justify-content: center;
+      margin-right: 60px;
+      gap: 30px;
+      margin-top: 25px;
+      border-bottom: 2px solid #ececf0;
+
+      h1 {
+        font-family: myFont;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #404043;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .filter__talent-rate {
+    margin-top: 15px;
+    h1 {
+      font-family: myFont;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      color: #404043;
+    }
+
+    input {
+      margin: 20px 50px;
+      width: 200px;
+      height: 2px;
+    }
+
+    .talent__rate {
+      display: flex;
+      padding: 5px;
+      margin-right: 40px;
+      justify-content: space-around;
+      margin-bottom: 11px;
+
+      .talent_score {
+        display: flex;
+        h1 {
+          font-family: myFont;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          color: #404043;
+        }
+        i {
+          font-size: 12px;
+          color: #404043;
+        }
+      }
+
+      .talent_score1 {
+        display: flex;
+        h1 {
+          font-family: myFont;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          color: #404043;
+        }
+        i {
+          font-size: 12px;
+          color: #404043;
+        }
+      }
+
+      .talent_score1 {
+        display: flex;
+      }
+    }
+  }
+
+  .nationality {
+    padding: 25px 0;
+
+    hr {
+      width: 90%;
+      color: #9ea0b4;
+      opacity: 0.6;
+    }
+
+    .nationality__title {
+      h1 {
+        font-family: myFont;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #404043;
+      }
+    }
+
+    .nationality__input {
+      background: #ffffff;
+      border: 1px solid #ececf0;
+      border-radius: 4px;
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+      margin-top: 15px;
+
+      input {
+        height: 43px;
+        border: none;
+      }
+
+      input::placeholder {
+        color: #9ea0b4;
+        font-size: 15px;
+      }
+
+      i {
+        font-size: 18px;
+        color: #9ea0b4;
+        opacity: 0.7;
+      }
+    }
+
+    .nationality__checks {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      .us,
+      .italy,
+      .russia {
+        span {
+          font-family: myFont;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 16px;
+          color: #404043;
+          margin-left: 10px;
+        }
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .age {
+    padding: 10px 0;
+
+    hr {
+      width: 90%;
+      color: #9ea0b4;
+      opacity: 0.6;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      font-family: myFont;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      color: #404043;
+    }
+
+    input {
+      margin: 20px 50px;
+      width: 200px;
+      height: 2px;
+    }
+
+    .number {
+      display: flex;
+      justify-content: space-evenly;
+
+      .N25 {
+        margin-right: 130px;
+      }
+
+      .N90 {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .gender {
+    padding: 15px 0;
+
+    h1 {
+      font-family: myFont;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      color: #404043;
+      margin-bottom: 15px;
+    }
+
+    .male,
+    .female {
+      margin-top: 12px;
+      span {
+        margin-left: 15px;
+        font-family: myFont;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 16px;
+        color: #404043;
+      }
+    }
+  }
 }
 
 // Media Queries
@@ -224,5 +491,19 @@
         margin-top: 4px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contentB {
+    display: none;
+  }
+
+  .database__content .contentA {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
   }
 }

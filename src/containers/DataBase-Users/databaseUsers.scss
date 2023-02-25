@@ -1,0 +1,108 @@
+.database__users-container {
+  .users {
+    background: #fff;
+    border-radius: 18px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+
+    .dots i {
+      cursor: pointer;
+      font-size: 20px;
+      position: absolute;
+      margin-left: 170px;
+      margin-top: 10px;
+      color: #fff;
+      visibility: hidden;
+      transition: all 0.1s ease-in-out;
+      opacity: 0.7;
+    }
+
+    h1 {
+      font-family: myFont;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.1px;
+      color: #000000;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      margin-left: 12px;
+    }
+
+    h3 {
+      font-family: "myFont";
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.1px;
+      color: #807f87;
+      margin-left: 14px;
+    }
+    hr {
+      margin: 10px 0;
+      color: #ececf0;
+      opacity: 0.4;
+    }
+  }
+
+  .usersocial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+
+    .followers,
+    .percent {
+      margin-bottom: 15px;
+
+      i {
+        color: #404043;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      span {
+        font-family: myFont;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 100%;
+        color: #404043;
+      }
+    }
+  }
+}
+
+.users .dots__container {
+  width: 154px;
+  height: 84px;
+  background: #ffffff;
+  border: 1px solid #cfcfd5;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  position: absolute;
+  top: 30px;
+  margin-left: 30px;
+  z-index: 999;
+
+  ul {
+    margin: 13px;
+
+    li {
+      margin-top: 8px;
+
+      a {
+        font-family: myFont;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #404043;
+      }
+    }
+  }
+}
+
+.users:hover .dots i {
+  visibility: visible;
+}
