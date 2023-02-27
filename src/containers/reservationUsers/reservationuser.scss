@@ -1,0 +1,68 @@
+.reservation__user-container {
+  background: #fff;
+  width: 881px;
+  height: 80px;
+  margin-left: 20px;
+  border-radius: 18px;
+
+  .reservation__user1 {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
+
+    .reservation__user-info {
+      display: flex;
+      
+
+      .user__name h1,
+      .user__place h1,
+      .user__country h1 {
+        font-family: myFont;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #404043;
+        margin-left: 30px;
+      }
+
+      .user__name small,
+      .user__place small,
+      .user__country small {
+        font-family: myFont;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #807f87;
+        margin-left: 30px;
+      }
+
+      .reservation__time {
+        display: flex;
+        margin-left: 60px;
+        .offer__name h1,
+        .reservation__timing h1,
+        .reservation__payment h1 {
+          font-family: myFont;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 16px;
+          color: #404043;
+          margin-left: 35px;
+        }
+
+        .offer__name small,
+        .reservation__timing small,
+        .reservation__payment small {
+          font-family: myFont;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #807f87;
+          margin-left: 35px;
+        }
+      }
+    }
+  }
+}

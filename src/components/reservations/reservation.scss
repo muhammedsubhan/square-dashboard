@@ -1,0 +1,173 @@
+.reservation__container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.reservation__header {
+  background: #fff;
+  border-top: 1px solid #ebebeb;
+  padding: 30px;
+
+  .reservation__year {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-family: myFont;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 19px;
+      letter-spacing: -0.3px;
+      color: #404043;
+    }
+
+    .reservation__days {
+      margin-left: 20px;
+      border-left: 1px solid lightgray;
+      display: flex;
+      flex-wrap: wrap;
+      span {
+        margin-left: 20px;
+        border: 2px solid #ececf0;
+        border-radius: 40px;
+        padding: 15px;
+
+        font-family: myFont;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: -0.3px;
+        color: #abacb4;
+        transition: all 0.3s;
+      }
+
+      span:hover {
+        color: black;
+        border: 2px solid #000;
+      }
+    }
+  }
+}
+
+.reservation__main-content {
+  display: flex;
+
+  .reservation__contentA {
+    width: 75%;
+
+    min-height: 100vh;
+  }
+
+  .reservation__contentB {
+    border: 1px solid;
+    width: 25%;
+  }
+}
+
+.reservations__results {
+  padding: 20px 20px;
+  h1 {
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+  }
+}
+
+.reservation__contentB {
+  .filters {
+    margin-top: 20px;
+
+    hr {
+      width: 90%;
+      color: lightgray;
+      opacity: 0.2;
+    }
+    .filter__title {
+      h1 {
+        font-family: myFont;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 18px;
+
+        letter-spacing: 0.1px;
+
+        color: #404043;
+      }
+    }
+
+    .filter__input {
+      background: #ffffff;
+      border: 1px solid #ececf0;
+      border-radius: 4px;
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      input {
+        height: 43px;
+        border: none;
+      }
+
+      input::placeholder {
+        color: #9ea0b4;
+        font-size: 15px;
+      }
+
+      i {
+        font-size: 18px;
+        color: #9ea0b4;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    h1 {
+      font-family: myFont;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 18px;
+
+      letter-spacing: 0.1px;
+      color: #404043;
+      margin-bottom: 15px;
+    }
+
+    hr {
+      width: 90%;
+      margin-top: 20px;
+      color: lightgray;
+      opacity: 0.2;
+    }
+
+    .milano,
+    .budapet,
+    .london,
+    .paris,
+    .miami {
+      margin-top: 10px;
+    }
+    .milano span,
+    .budapet span,
+    .london span,
+    .paris span,
+    .miami span {
+      font-family: myFont;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 16px;
+      margin-left: 15px;
+      color: #404043;
+    }
+  }
+}
